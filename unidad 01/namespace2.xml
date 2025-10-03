@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo xmlns:book="http://www.mipagina.org/libros"
+xmlns:disc="http://www.w3.org/2001/XMLSchema-instance">
+    <book:libro>
+        <book:titulo>Aprendiendo XML</book:tituloo>
+        <book:autor>Ana Pérez</book:autorr>
+    </book:libro>
+    <disc:vinilo>
+        <disc:titulo>Greatest Hits IT</disc:tituloo>
+        <disc:autor>Queen</disc:autorr>
+    </disc:viniloo>
+</catalogo>

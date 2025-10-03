@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empleado xmlns:trab="https://www.empresa.com"
+          xmlns:pers="http://www.pers.org/2001/XMLSchema-instance">
+    <nombre>Lucía Rodríguez</nombre>
+    <trab:email>lucia@miempresa.com</trab:email>
+    <pers:email>lucia@gmail.com</pers:email>
+</empleado>
