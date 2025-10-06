@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE banco SYSTEM "banco.dtd">
 <banco>
-    <sucursal codigo="01">
+    <sucursal codigo="S001">
         <nombre>Sucursal Málaga</nombre>
-        <cuenta codigo="C01">
+        <cuenta iban="C001S1">
             <tipo>Corriente</tipo>
             <saldo>0.50</saldo>
             <cliente>
@@ -15,7 +16,7 @@
                 <dni>67816429G</dni>
             </cliente>
         </cuenta>
-        <cuenta codigo="C02">
+        <cuenta iban="C002S1">
             <tipo>Corriente</tipo>
             <saldo>250.75</saldo>
             <cliente>
@@ -25,9 +26,9 @@
         </cuenta>
     </sucursal>
 
-    <sucursal codigo="02">
+    <sucursal codigo="S002">
         <nombre>Sucursal Cordoba</nombre>
-        <cuenta codigo="C03">
+        <cuenta iban="C001S2">
             <tipo>Corriente</tipo>
             <saldo>6767.67</saldo>
             <cliente>

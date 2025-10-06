@@ -1,0 +1,10 @@
+<!ELEMENT banco (sucursal+)><!-- siquiero que haya mas de una sucursal ponemos un +-->
+<!ELEMENT sucursal (nombre,cuenta+)>
+<!ATTLIST sucursal codigo NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cuenta (tipo,saldo,cliente+)>
+<!ATTLIST cuenta iban NMTOKEN #REQUIRED>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT saldo (#PCDATA)>
+<!ELEMENT cliente (nombre,dni)>
+<!ELEMENT dni (#PCDATA)>
