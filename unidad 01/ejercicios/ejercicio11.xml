@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<banco>
+    <sucursal codigo="01">
+        <nombre>Sucursal Málaga</nombre>
+        <cuenta codigo="C01">
+            <tipo>Corriente</tipo>
+            <saldo>0.50</saldo>
+            <cliente>
+                <nombre>Javier Rojas</nombre>
+                <dni>12345678A</dni>
+            </cliente>
+            <cliente>
+                <nombre>Isaac Sánchez</nombre>
+                <dni>67816429G</dni>
+            </cliente>
+        </cuenta>
+        <cuenta codigo="C02">
+            <tipo>Corriente</tipo>
+            <saldo>250.75</saldo>
+            <cliente>
+                <nombre>Paquita Salas</nombre>
+                <dni>754169423L</dni>
+            </cliente>
+        </cuenta>
+    </sucursal>
+
+    <sucursal codigo="02">
+        <nombre>Sucursal Cordoba</nombre>
+        <cuenta codigo="C03">
+            <tipo>Corriente</tipo>
+            <saldo>6767.67</saldo>
+            <cliente>
+                <nombre>JP García</nombre>
+                <dni>85126845T</dni>
+            </cliente>
+        </cuenta>
+    </sucursal>
+</banco>
