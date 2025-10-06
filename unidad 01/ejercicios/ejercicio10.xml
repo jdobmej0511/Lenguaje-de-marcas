@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<agenda xmlns:dir="http://www.ubicaciones.com/trabajadores">
-    <contacto>
+<agenda xmlns:direc="http://www.ubicaciones.com/trabajadores">
+    <contacto tipo="personal">
         <nombre>Ana Benítez</nombre>
         <telefono>673 823 063</telefono>
         <email>anabenitez@gmail.com</email>
-        <dir:direccion>
-            <dir:calle>Calle Hamilton 44</dir:calle>
-            <dir:ciudad>Madrid</dir:ciudad>
-            <dir:codigoPostal>29005</dir:codigoPostal>
-            <dir:pais>España</dir:pais>
-        </dir:direccion>
+        <direc:direccion>
+            <direc:calle>Calle Hamilton 44</direc:calle>
+            <direc:localidad>Barcelona</direc:localidad>
+            <direc:cp>28006</direc:cp>
+        </direc:direccion>
     </contacto>
 
-    <contacto>
+    <contacto tipo="laboral">
         <nombre>Toni Bou</nombre>
         <telefono>673 823 063</telefono>
         <email>tonibou@gmail.com</email>
-        <dir:direccion>
-            <dir:calle>Calle Sainz 55</dir:calle>
-            <dir:ciudad>Madrid</dir:ciudad>
-            <dir:codigoPostal>29008</dir:codigoPostal>
-            <dir:pais>España</dir:pais>
-        </dir:direccion>
+        <direc:direccion>
+            <direc:calle>Calle Sainz 55</direc:calle>
+            <direc:localidad>Madrid</direc:localidad>
+            <direc:cp>24001</direc:cp>
+        </direc:direccion>
     </contacto>
 
 </agenda>
