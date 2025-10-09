@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE agenda SYSTEM "ejercicio10.dtd">
 <agenda xmlns:direc="http://www.ubicaciones.com/trabajadores">
     <contacto tipo="personal">
         <nombre>Ana Benítez</nombre>

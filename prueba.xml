@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<concesionario xmlns:coche="http://www.concesionario.com/coche"
+            xmlns:moto="http://www.concesionario.com/moto">
+    <coche:coche tipo="4ruedas">
+        <coche:marca>audi</coche:marca>
+        <coche:modelo>rs3</coche:modelo>
+        <coche:potencia>20000cv</coche:potencia>
+    </coche:coche>
+
+    <moto:moto>
+        <moto:marca>yamaha</moto:marca>
+        <moto:modelo>r1</modelo>
+        <moto:potencia>20000cv</potencia> 
+        <moto:papu></moto:papu>
+    </coche:moto>
+
+</concesionario>
