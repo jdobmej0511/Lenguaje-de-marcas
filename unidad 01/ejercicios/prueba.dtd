@@ -1,4 +1,4 @@
-<!ELEMENT banco (sucursal+)><!-- siquiero que haya mas de una sucursal ponemos un +-->
+<!ELEMENT banco (sucursal+)>
 <!ELEMENT sucursal (nombre,cuenta+)>
 <!ATTLIST sucursal codigo NMTOKEN #REQUIRED>
 <!ELEMENT nombre (#PCDATA)>

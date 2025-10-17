@@ -1,0 +1,6 @@
+<!ELEMENT catalogo (libro+)>
+<!ELEMENT libro (title,creator,fecha?,lanzamiento?)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT creator (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT lanzamiento (#PCDATA)>

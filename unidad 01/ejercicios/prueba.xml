@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE banco SYSTEM "prueba.dtd">
+<banco> 
+<sucursal codigo="001">
+    <nombre>madrid</nombre>
+    <cuenta iban="34">
+        <tipo>corriente</tipo>
+        <saldo>2398.54</saldo>
+        <cliente>
+            <nombre>fghfg</nombre>
+            <dni>345345</dni>
+        </cliente>
+        <cliente>
+            <nombre>ghf</nombre>
+            <dni>456</dni>
+        </cliente>
+    </cuenta>
+    <cuenta iban="345345">   
+        <tipo>corriente</tipo>
+        <saldo>2398.54</saldo>
+        <cliente>
+            <nombre>fghfg</nombre>
+            <dni>345345</dni>
+        </cliente>
+    </cuenta>
+</sucursal>
+
+<sucursal codigo="002">
+    <nombre>malaga</nombre>
+    <cuenta iban="4123">
+        <tipo>fghfgf</tipo>
+        <saldo>54645</saldo>
+        <cliente>
+            <nombre>fghfh</nombre>
+            <dni>5656</dni>
+        </cliente>
+        </cuenta>
+</sucursal>
+</banco>
