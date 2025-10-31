@@ -1,0 +1,10 @@
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre,telefono,email,direccion)>
+<!ATTLIST contacto tipo NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (calle,localidad,cp)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>

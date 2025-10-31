@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <!DOCTYPE catalogo SYSTEM "ejercicio9.dtd">
 <catalogo xmlns:dc="http://purl.org/dc/elements/1.1/"
 >
+=======
+<catalogo xmlns:dc="http://purl.org/dc/elements/1.1/">
+>>>>>>> 50cbe1b2f956fa324e5899ad083413b6294f0e6e
     <libro>
         <dc:title>Mandanga estail</dc:title>
         <dc:creator>Juan Fernández</dc:creator>
