@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página web de videojuegos">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <title>GameZone</title>
 </head>
 <body>
@@ -14,11 +14,11 @@
 
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Guías</a></li>
-                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -27,54 +27,61 @@
         <!-- Formulario de contacto -->
         <section class="tarjeta">
             <h2>Contacto</h2>
-            <form name="contacto" action="contacto.php" method="get" autocomplete="off">
-                <label for="categoria">Categoría de juego:</label>
-                <select name="categoria" id="categoria">
-                    <option disabled selected>-Selecciona categoría-</option>
-                    <option value="rol">Rol</option>
-                    <option value="aventura">Aventura</option>
-                    <option value="deportes">Deportes</option>
-                </select>
+            <form name="contacto" action="contacto.php" method="get" autocomplete="off" class="form-contacto">
+                
+                <fieldset>
+                    <div class="form-row">
+                    <label for="categoria">Categoría de juego:</label>
+                    <select name="categoria" id="categoria">
+                        <option disabled selected>-Selecciona categoría-</option>
+                        <option value="rol">Rol</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="deportes">Deportes</option>
+                    </select>
+                    </div>
+
+                    <!-- Selecionamos la plataforma -->
+                    <div class="form-row">
+                    <label>Plataforma:</label>
+                    </div>
+                    <input type="radio" name="plataforma" value="PC">
+                    <label for="dificultad">PC</label>
+                   
+
+                    <input type="radio" name="plataforma" value="PS5">
+                    <label for="dificultad">PS5</label>
+
+                    <input type="radio" name="plataforma" value="switch">
+                    <label for="dificultad">Switch</label>
+                    
 
 
-                <!-- Selecionamos la plataforma -->
-                <p>Plataforma:</p>
-                <input type="checkbox" name="plataforma" value="PC">
-                <label for="dificultad">PC</label>
+                    <!-- Seleccion de dificultad -->
+                    <div class="form-row">
+                    <label>Dificultad:</label>
+                    <input type="radio" name="dificultad" value="facil">
+                    <label for="dificultad">Fácil</label>
 
-                <input type="checkbox" name="plataforma" value="PS5">
-                <label for="dificultad">PS5</label>
+                    <input type="radio" name="dificultad" value="medio">
+                    <label for="dificultad">Medio</label>
 
-                <input type="checkbox" name="plataforma" value="switch">
-                <label for="dificultad">Switch</label>
+                    <input type="radio" name="dificultad" value="dificil">
+                    <label for="dificultad">Difícil</label>
+                    </div>   
+
+                    <!-- Check box sin value-->
+                    <div class="form-row">
+                    <br>
+                    <label>Suscribirse a noticias:</label>
+                    <label><input type="checkbox" name="suscripcion" checked>Sí</label>
+                    </div>
 
 
-                <!-- Seleccion de dificultad -->
-                <p>Dificultad:</p>
-                <input type="checkbox" name="dificultad" value="facil">
-                <label for="dificultad">Fácil</label>
-
-                <input type="checkbox" name="dificultad" value="medio">
-                <label for="dificultad">Medio</label>
-
-                <input type="checkbox" name="dificultad" value="dificil">
-                <label for="dificultad">Difícil</label>    
-
-                <!-- Check box sin value-->
-                <br>
-                <p>Suscribirse a noticias:</p>
-                <label><input type="checkbox" name="suscripcion" checked>Sí</label>
-
-                <!-- Campo oculto -->
-                <input type="hidden" name="product-id" value="1234">
-
-                <!-- Tabla de comentarios -->
-                <label for="mensaje">deja aquí tu mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-
-                <br>
-                <input type="submit" value="Contactar">
-                <input type="reset" value="Limpiar formulario">
+                   
+                    <input type="submit" value="Contactar">
+                    <input type="reset" value="Limpiar">
+                    </div>
+                </fieldset>
             </form>
         </section>
     </main>
