@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="JOSE CARLOS DOBLAS MEJIAS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para registrar incidencias">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario incidencia</title>
+</head>
+<body>
+
+    <header class="cabecera">
+        <div class="brand">
+            <img src="imagenes/IAT-LOGOTIPO.jpg" alt="Logo del centro educativo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <form action="procesarincidencia.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Nueva incidencia</legend>
+                <div class="grupo-form">
+                    <label for="nombre">Profesor/a:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" id="departamento" name="departamento" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="aula">Aula (número):</label>
+                    <input type="number" id="aula" name="aula" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="dia">Día de la semana:</label>
+                    <select id="dia" name="dia" required>
+                        <option value="">Selecciona...</option>
+                        <option>Lunes</option>
+                        <option>Martes</option>
+                        <option>Miércoles</option>
+                        <option>Jueves</option>
+                        <option>Viernes</option>
+                    </select>
+                </div>
+                <div class="grupo-form">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="grupo-form">
+                    <label for="descripcion">Descripción de la incidencia:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+                <div class="grupo-form imagen">
+                    <label for="imagen">Subir imagen (opcional):</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                </div>
+                <div class="botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reiniciar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        
+        <h3>Síguenos en redes sociales</h3>
+        <a href="https://facebook.com" target="_blank"><img src="imagenes/icons8-facebook-48.png" alt="Facebook"></a>
+        <a href="https://twitter.com" target="_blank"><img src="imagenes/icons8-twitter-48.png" alt="Twitter"></a>
+        <a href="https://instagram.com" target="_blank"><img src="imagenes/icons8-instagram-48.png" alt="Instagram"></a>
+        <a href="https://youtube.com" target="_blank"><img src="imagenes/icons8-youtube-48.png" alt="YouTube"></a>
+        <a href="https://tucentro.es" target="_blank"><img src="imagenes/icons8-website-48.png" alt="Web del centro"></a>
+    </footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
 <body>
     <header class="cabecera">
         <div class="brand">
-            <img class="logo" src="imagenes/gamezone-logo.png" alt="Logo de GameZone">
+            <img class="logo" src="../imagenes/gamezone-logo.png" alt="Logo de GameZone">
         </div>
 
         <nav class="navegacion">
@@ -42,7 +42,7 @@
 
                     <!-- Selecionamos la plataforma -->
                     <div class="form-row">
-                    <label>Plataforma:</label>
+                        <label>Plataforma:</label>
                     </div>
                     <input type="radio" name="plataforma" value="PC">
                     <label for="dificultad">PC</label>
@@ -58,28 +58,32 @@
 
                     <!-- Seleccion de dificultad -->
                     <div class="form-row">
-                    <label>Dificultad:</label>
+                        <label>Dificultad:</label>
+                    </div>
+
                     <input type="radio" name="dificultad" value="facil">
-                    <label for="dificultad">Fácil</label>
+                    <label for="dificultad">Fácil</label>               
 
                     <input type="radio" name="dificultad" value="medio">
                     <label for="dificultad">Medio</label>
 
                     <input type="radio" name="dificultad" value="dificil">
                     <label for="dificultad">Difícil</label>
-                    </div>   
+                   
 
                     <!-- Check box sin value-->
                     <div class="form-row">
-                    <br>
-                    <label>Suscribirse a noticias:</label>
-                    <label><input type="checkbox" name="suscripcion" checked>Sí</label>
+                        <br>
+                        <label>Suscribirse a noticias:</label>
                     </div>
 
+                    <label><input type="checkbox" name="suscripcion" checked>Sí</label>
 
-                   
-                    <input type="submit" value="Contactar">
-                    <input type="reset" value="Limpiar">
+                    <br>
+
+                    <div class="form-row">
+                        <button type="submit">Contactar</button>
+                        <button type="reset">Limpiar</button>
                     </div>
                 </fieldset>
             </form>
