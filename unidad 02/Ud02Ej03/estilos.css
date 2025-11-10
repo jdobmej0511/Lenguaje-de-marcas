@@ -1,93 +1,69 @@
-* {
-    box-sizing: border-box;
-}
-
-html, body {
+body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    min-height: 100vh;
+    display: flex;
 }
 
-header {
-    display: flex;
-    justify-content: center;
+.cabecera {
+    text-align: center;
     align-items: center;
     padding: 1rem;
 }
 
-header img {
+.logo {
     width: 300px;
     height: 110px;
 }
 
-main {
-    flex: 1 0 auto;
+
+.contenido-principal {
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-form {
+.form-registro {
     background: #F4F1ED;
     color: firebrick;
-    border: 9px solid darkgoldenrod;
+    border:solid darkgoldenrod;
+    border-color: darkgoldenrod;
+    border-style: 9px;
     border-radius: 7px;
     width: 400px;
-    padding: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 9rem;
 }
 
-legend {
+.titulo-formulario {
     color: darkblue;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-.grupo-form {
+.form-formulario {
     display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 18px;
     flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
 }
 
-.grupo-form.imagen {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.botones {
+.img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-    margin-top: 1rem;
 }
 
-footer {
-    background: #333;
-    color: #fff;
+.botones-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1px;
+}
+
+.pie {
+    background-color: #333;
+    color: rgb(238, 177, 22);
     text-align: center;
     padding: 5px;
-}
-
-footer h3 {
-    color: #F7C600;
-    margin-bottom: 8px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer img {
-    width: 48px;
-    height: 48px;
-    vertical-align: middle;
 }
