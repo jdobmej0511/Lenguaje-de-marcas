@@ -81,7 +81,7 @@ body {
     -color blanco
     -border sutil y redondeado
     -sombra ligera
-    -ancho máxima controlado
+    -ancho máximo controlado
 */
 .tarjeta {
     background: #fff;
@@ -203,4 +203,41 @@ body {
     color: #7f8c8d;
     background: #38707e;
     font-size: 14px;
+}
+
+/*  ===========================
+    SECCION TIENDA
+    ===========================
+*/
+
+.tarjeta.tienda{
+    width: min(1300px,95%);
+}
+
+.lista-card--flex{
+    display: flex;              /* Activa el modelo flex */
+    flex-wrap: wrap;            /* Permite que las cards salten de linea si no cabe */
+    gap: 16px;                  /* Espacio uniforme entre las cards */
+    justify-content: center;    /* Centra horizontalmente todas las cards */
+}
+
+/* Card individual*/
+.card{
+    width: 280px;
+    border: 1px #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Imagen dentro de la card */
+.card-image{
+    width: 100%;
+    height: 180px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    object-fit: cover;
 }
