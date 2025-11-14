@@ -214,7 +214,7 @@ body {
     width: min(1300px,95%);
 }
 
-.lista-card--flex{
+.lista-cards--flex{
     display: flex;              /* Activa el modelo flex */
     flex-wrap: wrap;            /* Permite que las cards salten de linea si no cabe */
     gap: 16px;                  /* Espacio uniforme entre las cards */
@@ -240,4 +240,69 @@ body {
     border-radius: 8px;
     margin-bottom: 8px;
     object-fit: cover;
+}
+
+/* Textos */
+.card-titulo {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 8px 0 4px;
+}
+
+.card-descripcion {
+    font-size: 0.9rem;
+    color: #666;
+    min-height: 3.5em;  /* Mantiene altura uniforme aunque cambie el texto */
+}
+
+.card-precio {
+    color:#e74c3c;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.card-precio{
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.card-boton{
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #2C3E50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* display: inline-block:
+    Por defecto los enlaces <a> son elemntos en linea u no acptan padding vertical real ni border-radius */
+
+
+.contenedor-grid :nth-child(1){ background-color: aquamarine;}
+.contenedor-grid :nth-child(2){ background-color: #e74c3c;}
+.contenedor-grid :nth-child(3){ background-color: greenyellow;}
+.contenedor-grid :nth-child(4){ background-color: purple;}
+.contenedor-grid :nth-child(5){ background-color: goldenrod;}
+.contenedor-grid :nth-child(6){ background-color: blue;}
+
+
+.contenedor-grid{
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+
+.item-grid{
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #60a6bc;
+    font-size: 1.2rem;
 }
