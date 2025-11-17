@@ -320,8 +320,18 @@ body {
 
 .item-1 {
      /* Alineacion de los elementos dentro de cada celda */
-     justify-self: center;
-     align-self: center; 
+     /* justify-self: center;
+     align-self: center; */
+     place-self: center;
+     order: 1;
+}
+
+.item-3 {
+    /* Alineacion de los elementos dentro de cada celda */
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center;
+    order: -4;
 }
 
 
