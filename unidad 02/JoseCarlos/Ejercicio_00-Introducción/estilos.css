@@ -306,8 +306,8 @@ body {
     min-height: 300px;
 
     /* Alineacion de los elementos dentro de cada celda */
-    justify-items: start;
-    align-items: start; 
+    justify-items: stretch;
+    align-items: stretch; 
     /* Atajo: place.items = aling -items + justify-items 
     place-items: start center; */
 
@@ -316,6 +316,12 @@ body {
     align-content: start;*/
     /* Atajo: place-content = align-contnet + justify-content */
     place-content: center;
+}
+
+.item-1 {
+     /* Alineacion de los elementos dentro de cada celda */
+     justify-self: center;
+     align-self: center; 
 }
 
 
