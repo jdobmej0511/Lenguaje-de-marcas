@@ -284,19 +284,38 @@ body {
 .contenedor-grid :nth-child(2){ background-color: #e74c3c;}
 .contenedor-grid :nth-child(3){ background-color: greenyellow;}
 .contenedor-grid :nth-child(4){ background-color: purple;}
-.contenedor-grid :nth-child(5){ background-color: goldenrod;}
-.contenedor-grid :nth-child(6){ background-color: blue;}
+
 
 
 .contenedor-grid{
-    display: grid;
-    /* grid-template-columns: 200px 200px 200px; */
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    justify-content: center;
+    display: grid;      /* Activamos grid */
+    /* row-gap: 5px;
+    /* column-gap: 25px; */
+    /* gap: 5 px 25px; */
+     /* espacio uniforme entre filas y columnas */
+    /* gap: 10px; */
+    /* 3 columnas exactas */
+    /* grid-template-columns: repeat(2,200px) 100px; */
+     /* 2 filas exactas */
+    grid-template-rows: 100px 100px;   
     background-color: #eaeaea;
     padding: 10px;
+    grid-template-columns: repeat(3, 180px);
+    gap: 20px;
+    grid-template-rows: 75px 125px;
+    min-height: 300px;
+
+    /* Alineacion de los elementos dentro de cada celda */
+    justify-items: start;
+    align-items: start; 
+    /* Atajo: place.items = aling -items + justify-items 
+    place-items: start center; */
+
+    /* Alineacion de la cuadricula respecto del contenedor grid*/
+    /* justify-content: start;
+    align-content: start;*/
+    /* Atajo: place-content = align-contnet + justify-content */
+    place-content: center;
 }
 
 
