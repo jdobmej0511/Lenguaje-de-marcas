@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,41 +16,62 @@
         <nav class="navegacion">
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="pages/tienda.html">Tienda</a></li>
-                <li><a href="#">Guías</a></li>
                 <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="registro.html">Registro</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="juegos.html">Juegos</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main id="contenido-principal">
-        <!-- Section conb DOS clases: 'tarjeta' (estilo global) y 'tienda' (estilo especifico) -->
+        <!-- Section con DOS clases: 'tarjeta' (estilo global) y 'tienda' (estilo específico) -->
         <section class="tarjeta tienda">
             <h2>Productos destacados</h2>
 
-            <!-- Contenedor de las tarjetas -->
+            <!-- Contenedor de las cards -->
             <div class="lista-cards lista-cards--flex">
 
                 <!-- Primer producto -->
                 <article class="card">
-                    <!-- iamgen producto -->
-                    <img src="../imagenes/mouse.png" alt="Raton gaming RGB" class="card-image">
+                    <!-- Imagen -->
+                    <img src="../imagenes/mouse.png" alt="Ratón gaming RGB" class="card-imagen">
 
-                    <!-- Titulo del producto -->
-                    <ht class="card-titulo"></ht>
+                    <!-- Título del producto -->
+                    <h3 class="card-titulo">Ratón Gaming RGB</h3>
 
-                    <!-- Descripccion del producto -->
-                    <p class="card-description">
-                        Raton ergonomómico con 6 botones y sensor de alta presición.
+                    <!-- Descripción -->
+                    <p class="card-descripcion">
+                        Ratón ergonómico con 6 botones y sensor de alta precisión.
                     </p>
 
                     <!-- Precio -->
                     <p class="card-precio">19.99€</p>
 
-                    <!-- Boton -->
+                    <!-- Botón -->
+                    <a href="#" class="card-boton">Añadir al carrito</a>
+                </article>
+
+                <!-- Segundo producto -->
+                <article class="card">
+                    <!-- Imagen -->
+                    <img src="../imagenes/mouse.png" alt="Ratón gaming RGB" class="card-imagen">
+
+                    <!-- Título del producto -->
+                    <h3 class="card-titulo">Ratón Gaming RGB</h3>
+
+                    <!-- Descripción -->
+                    <p class="card-descripcion">
+                        Ratón ergonómico con 6 botones y sensor de alta precisión.
+                    </p>
+
+                    <!-- Precio -->
+                    <p class="card-precio">19.99€</p>
+
+                    <!-- Botón -->
                     <a href="#" class="card-boton">Añadir al carrito</a>
                 </article>
             </div>
@@ -72,4 +93,3 @@
         <p>&copy; 2025 GameZone. Todos los derechos reservados.</p>
     </footer>
 </body>
-</html>
