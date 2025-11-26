@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="JOSE CARLOS DOBLAS MEJIAS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para registrar incidencias">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario incidencia</title>
+</head>
+<body>
+
+    <header class="cabecera">
+            <img src="imagenes/IAT-LOGOTIPO.jpg" alt="Logo del centro" class="logo">
+    </header>
+
+    <main id="contenido-principal">
+        <form action="procesarincidencia.php" method="post" class="form-procesarincidencia">
+            <fieldset class="form-registro">
+                <!-- tutulo -->
+                <legend class="titulo-formulario">Nueva incidencia</legend> 
+            
+                <!-- profesor -->
+                <div class="form-formulario">
+                    <label for="nombre">Profesor *:</label>
+                    <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre aqui" required>
+                </div>
+
+                <!-- correo -->
+                <div class="form-formulario">
+                    <label for="correo">Correo electrónico *:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Escribe tu correo aqui" required>
+                </div>
+                
+                <!-- departamento -->
+                <div class="form-formulario">
+                    <label for="departamento">Departamento *:</label>
+                    <select name="departamento" id="departamento">
+                        <option disble selected>-Selecciona una opción-</option>
+                        <option>Lenguaje de marca</option>
+                        <option>Entorno de desarrollo</option>
+                        <option>Digitalización</option>
+                        <option>Sistemas informáticos</option>
+                        <option>Programación</option>
+                        <option>Base de datos</option>
+                    </select>
+                </div>
+
+                <!-- aula -->
+                <div class="form-formulario">
+                    <label for="aula">Aula *:</label>
+                    <input type="number" id="aula" name="aula" required>
+                </div>
+
+                <!-- fecha -->
+                <div class="form-formulario">
+                    <label for="dia">Día de la incidencia *:</label>
+                    <input type="week" name="dia" id="decha" required>
+                </div>
+
+                <!-- hora -->
+                <div class="form-formulario">
+                    <label for="hora">Hora de la incidencia *:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <!-- descriccion -->
+                <div class="form-formulario">
+                    <label for="descripcion">Descripción de la incidencia *:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+
+                <!-- imagen -->
+                <div class="form-formulario imagen">
+                    <label for="imagen">Imagen de la incidencia (opcional):</label>
+                </div>
+                <div class="form-formulario image">
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                </div>
+
+                <!-- botones -->
+                <div class="form-formulario botones-formulario">
+                    <button type="submit">Enviar incidencia</button>
+                    <button type="reset">Borrar formulario</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="pie">
+        <!-- redes -->
+        <h3>Síguenos</h3>
+       <a href="https://www.facebook.com"><img src="imagenes/icons8-facebook-48.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="imagenes/icons8-twitter-48.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="imagenes/icons8-instagram-48.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com"><img src="imagenes/icons8-youtube-48.png" alt="YouTube"></a>
+        <a href="https://www.cpipf-alanturing.es"><img src="imagenes/icons8-website-48.png" alt="Web del centro"></a>
+    </footer>
+</body>
+    </footer>
+</body>
+</html>
