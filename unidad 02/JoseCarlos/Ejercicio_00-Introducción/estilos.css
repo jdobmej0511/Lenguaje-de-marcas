@@ -199,6 +199,26 @@ body {
     margin-top: auto;
 }
 
+/*####################
+    SECCION CONTACTO
+  ####################*/
+
+.contacto-ubicacion {
+    margin-top: 2rem;
+}
+
+.mapa-contenedor{
+    margin-top: 1 rem;
+    margin: 0 auto;
+}
+
+.mapa-contenedor iframe{
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+}
+
+
 
 /* ========================
    SECCION TIENDA
