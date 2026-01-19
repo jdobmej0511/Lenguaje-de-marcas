@@ -142,3 +142,18 @@ function estiquetaProducto(prod){
 
 console.log(estiquetaProducto(prod));
 
+// Crear un array de 3 objetos productos (nombre/precio)
+// y una función que devuelva el precio total sumado
+// (aquí puedes hacerlo simple: sumar 3 elementos a mano, sin bucles).
+// Array de 3 objetos productos con nombre y precio
+const productos = [
+    {nombre: "Teclado", precio: 40 },
+    { nombre: "Ratón ", precio: 30 },
+    { nombre: "Cascos ", precio: 20 }
+];
+
+const precioTotal = function() {
+    return productos[0].precio + productos[1].precio + productos[2].precio;
+}
+
+console.log(`Precio total: ${precioTotal()}€`);  
