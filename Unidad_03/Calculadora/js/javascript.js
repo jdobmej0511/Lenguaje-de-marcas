@@ -10,6 +10,7 @@ const pantalla = document.getElementById("pantalla");                   //Pantal
 // const botonesNumeros = document.getElementsByClassName("numero");
 // const botonesNumeros = Array.from(document.querySelectorAll(".numero"));     //Convierto el NodeList en Array
 const botonesNumeros = [...document.querySelectorAll(".numero")];               //Convierto el NodeList en Array
+const botonesOperacion = [document.querySelectorAll(".operdor")];
 
 // Manejar eventos de click
 // for (let i = 0; i < botones.length; i++) {
@@ -24,6 +25,20 @@ botonesNumeros.forEach(boton => {
         mostrarNumeroPantalla(boton.textContent);
     });
 });
+
+// Conectar los botones con el evento click
+botonesOperacion. forEach(boton => {
+    boton.addEventListener("click", () => {
+    manejarOperador(operadorActual);
+    
+    });
+    
+    });
+    
+    // Manejo el evento del botón =
+    botonIgual.addEventListener("click", () => {
+        calcularOperacion();
+    });
 
 
 
@@ -124,7 +139,10 @@ function mostrarPuntoPantalla() {
  *
  */
 function manejarOperador(operador) { 
-
+    operadorActual = operador;
+    valorAnterior = valorActual;
+    valorActual = "o";
+    resultadoMostrado = false;
 }
 
 /**
@@ -135,7 +153,35 @@ function manejarOperador(operador) {
  *
  */
 function calcularOperacion() { 
+    if (operadorActual === null || valorAnterior === null) return;
 
+    let num1 = parseFloat(valorAnterior);
+    let num2 = parseFloat(valorActual)
+    let resultado;
+    switch (operadorActual) {
+        case "+":
+            resultado = num1 + num2;
+            break;
+
+        case "-":
+            resultado = num1 - num2;
+            break;
+
+        case "*":
+            resultado = num1 * num2;
+            break;
+    
+        case "/":
+            if (num2 === 0) { 
+                valorActual = "ERROR"
+                actualizarPantalla();
+                return;
+            } 
+            resultado = num1 / num2;
+            break;
+    }
+    valorActual = resultado.toString;
+    actualizarPantalla();
 }
 
 /**
